@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h2{
+    font-size: 3em;
+    font-family: cursive;
+    text-align: center;
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    position: relative;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.score{
+    position: relative;
+    top: 3em;
+    font-family: fantasy;
+    font-size: 1.3em;
+    text-align: center;
+    
+}
+
+.score span{
+    color: deeppink;
+}
+
+@media(max-width:400px){
+    *{
+        overflow: none;
+    }
+}
